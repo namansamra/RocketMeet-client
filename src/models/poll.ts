@@ -57,7 +57,6 @@ export interface HttpResponse {
   statusCode: number;
 }
 
-
 export interface PieObj {
   [key : string] : {
     start : number;

@@ -1,4 +1,4 @@
-import { Dispatch, useState, useEffect } from "react";
+import { Dispatch } from "react";
 import { Table } from "react-bootstrap";
 import { Check, StarFill } from "react-bootstrap-icons";
 import dayjs from "dayjs";
@@ -10,13 +10,11 @@ import SubmitChoices from "./SubmitChoices";
 import SubmitFinalChoice from "./SubmitFinalChoice";
 import ChartModal from "./ChartModal";
 import { isChoicePresentInPollChoices} from "../../helpers/helpers";
-
 import {
   Choice,
   RocketMeetPollFromDB,
   Vote,
 } from "../../models/poll";
-
 dayjs.extend(localizedFormat);
 
 const PollTable = (props: {
