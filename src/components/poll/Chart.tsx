@@ -11,7 +11,7 @@ const Chart = (props: { ChartData: ChartDataArgs }): JSX.Element => {
     window.innerWidth < 500 ? "bottom" : "right"
   );
 
-  useEffect(() => {
+  useEffect(()=> {
     const handleResize = (): void => {
       let size = 12;
       let position = "right";
